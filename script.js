@@ -6,7 +6,7 @@ const students = [
 ];
 
 // Initialize the map with a focus on Bangladesh
-const map = L.map('map').setView([23.6850, 90.3563], 8);
+const map = L.map('map').setView([23.6850, 90.3563], 100);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '© OpenStreetMap contributors'
