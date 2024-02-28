@@ -5,17 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Khagrachari University Students</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-  <style>
-    /* Add your custom styles here */
-    body { margin: 0; padding: 0; }
-    #map { position: absolute; top: 0; bottom: 0; width: 80%; }
-    #sidebar { position: absolute; top: 0; bottom: 0; width: 20%; background: #f0f0f0; padding: 10px; overflow-y: auto; }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <div id="map"></div>
-  <div id="sidebar"></div>
+  <div id="sidebar">
+    <h2>Filter</h2>
+    <label for="universitySelect">University:</label>
+    <select id="universitySelect">
+      <option value="">All Universities</option>
+    </select>
+
+    <label for="searchInput">Search by Name:</label>
+    <input type="text" id="searchInput" placeholder="Enter name...">
+
+    <button onclick="filterStudents()">Apply Filter</button>
+  </div>
 
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="script.js"></script>
